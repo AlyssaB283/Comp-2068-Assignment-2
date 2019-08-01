@@ -1,0 +1,18 @@
+    
+extends layout
+
+block content
+  .container
+    h1 Welcome, Login
+
+    form(method="post")
+      .form-group
+        label Username
+        input.form-control(name="username" type="text" placeholder="Username")
+      .form-group
+        label E-Mail
+        input.form-control(name="email" type="email" placeholder="email@email.com")
+      .form-group
+        label Password
+        input.form-control(name="password" type="password" placeholder="Enter password")
+      button.btn.btn-primary(type="submit") Login
