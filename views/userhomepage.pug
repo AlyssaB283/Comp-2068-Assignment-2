@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    h1= title
+    //Render the username
+    h3 Welcome #{user}
+    table
+        tr
+            //This right below might not work 100%, but you can remove it and replace with 'p Your Surveys'
+            th(colspan = '2', text-align = 'center') Your Surveys
+            
+        // - var surveys = Make sure you put the user's created surveys in here (also needs to be an array!)
+        //
+            each survey, n in surveys.length
+                tr
+                    td
+                        a(href=[Put the generated link to the survey webpage here]) #{[get the survey object's name]}
+                        
+        //This is probably x1000 easier as a list
+    
+    //Remember to add the functionality
+    input(type='submit' name='newsurvey' value='New Survey')
+    
+                        
+            
