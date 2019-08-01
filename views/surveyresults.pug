@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    //ol 
+        each question in [survey's question array]
+            li = question
+                ul
+                    each option in [survey's question chosen choice percentage]
+                        li = answer
