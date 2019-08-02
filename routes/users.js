@@ -1,6 +1,10 @@
+//Users page
+//Contributers: Shyla Grantmyre, Schevene Singh, Alyssa Brown, Liam Edwards
+//DSA Survey Site
+//Routes through the users and calls the middleware to ensure they are authenticated
 var express = require('express');
 var router = express.Router();
-const requireAuth = require('../middlewares/requireAuthentication');
+const requireAuth = require('../middlewares/requireAuth');
 
 router.use(requireAuth);
 

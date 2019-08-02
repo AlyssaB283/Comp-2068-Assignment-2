@@ -1,0 +1,29 @@
+//-View survey pug page
+//-Contributers: Shyla Grantmyre, Schevene Singh, Alyssa Brown, Liam Edwards
+//-DSA Survey Site
+//-Page that renders the skeleton of a survey to be created
+extends layout
+
+block content
+    h1= {survey.title}
+    form(method="POST")
+        .content
+        input(type="hidden", value=Id, name="surveyId")
+        for (var q = 0; q < {survey.questions}.length; q++) {
+          var question = {survey.questions}[q];
+          var questionName = "question" + (q + 1);
+         div
+             h4 
+                b Question 
+                span.
+                    !{question}
+             div
+                div.form-group
+                    div.radio
+                        label.control-label.radio-inline
+                            input(type="radio", name=questionName, value=question.id + ", true", required, id=questionName+"true")
+                            input(type="radio", name=questionName, value=question.id + ", false", required, id=questionName+"false")
+            }
+        button(type="submit")Submit
+    h3 #{[Survey Title Goes Here]}
+    //Render the user-made question as the HTML elements here
