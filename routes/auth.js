@@ -1,3 +1,7 @@
+//Authorization Page
+//Contributers: Shyla Grantmyre, Schevene Singh, Alyssa Brown, Liam Edwards
+//DSA Survey Site
+//Routes with assurance of authentication of users
 const express = require('express');
 const passport = require('passport');
 const router = express.Router();
@@ -10,6 +14,7 @@ router.post('/register', function(req, res) {
     function(err, account) {
       if (err) {
         console.log(err);
+        alert(err);
         return res.render('register', { account: account });
       }
 
