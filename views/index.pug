@@ -1,0 +1,17 @@
+//-Index Home page
+//-Shyla Grantmyre, Schevene Singh, Alyssa Brown, Liam Edwards
+//-DSA Survey Site
+//-Home page of the pug site
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  if isAuthenticated
+    p Welcome User!
+  else
+    p Please Sign In!
+    p go to "/login" to login or "/register" to sign up!
+  
+

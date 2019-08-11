@@ -1,0 +1,10 @@
+//-Error Pug
+//-Shyla Grantmyre, Schevene Singh, Alyssa Brown, Liam Edwards
+//-DSA Survey Site
+//-Renders an error page and prints the stack to the page
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  pre #{error.stack}
