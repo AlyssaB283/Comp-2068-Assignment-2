@@ -1,3 +1,9 @@
-extends layout
+extends ../layout
 
 block content
+  h1 Survey List
+  a(href="/surveys/new") Create Project
+  ul
+    each survey in surveys
+      li
+        a(href=`/surveys/${survey._id}`)= survey.title
