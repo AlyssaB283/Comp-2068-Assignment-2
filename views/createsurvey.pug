@@ -1,0 +1,93 @@
+extends layout
+
+block content
+    form(method="post")
+        .content
+            input(type="hidden", value=Id, name="surveyId")
+            //input(type="radio", name=questionName, value=question.id + ", true", required, id=questionName+"true")
+            //input(type="radio", name=questionName, value=question.id + ", false", required, id=questionName+"false")
+            input( name="title" placeholder="Title of Survey")
+            div 
+                div
+                    //Question 1
+                    input( name="questions[].question" placeholder="Question 1") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                div
+                    //Question 2
+                    input( name="questions[].question" placeholder="Question 2") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                div
+                    //Question 3
+                    input( name="questions[].question" placeholder="Question 3") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                div
+                    //Question 4
+                    input( name="questions[].question" placeholder="Question 4") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                div
+                    //Question 5
+                    input( name="questions[].question" placeholder="Question 5") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                div
+                    //Question 6
+                    input(name="questions[].question" placeholder="Question 6") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                div
+                    //Question 7
+                    input( name="questions[].question" placeholder="Question 7") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                div
+                    //Question 8
+                    input( name="questions[].question" placeholder="Question 8") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                div
+                    //Question 9
+                    input( name="questions[].question" placeholder="Question 9") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                div
+                    //Question 10
+                    input( name="questions[].question" placeholder="Question") 
+                    div
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+                        input( name="questions[].answers[]")
+
+        
+    button(type="submit") Submit

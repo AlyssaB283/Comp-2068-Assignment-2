@@ -13,22 +13,15 @@ block content
   p Welcome to the #{title}
 
   div.dj 
-    p  
-    | In this application will let you create a
-    | KLNIHUOHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-    | UYFTDJYTYUGIHUGJYFTH
-    | In this application will let you create a
-    | KLNIHUOHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-    | UYFTDJYTYUGIHUGJYFTH
   br
   br
   if isAuthenticated
     p Welcome User!
     br
   else
-    button Sign in
+    a(href="login"): button(type="button") Sign in 
     br 
-    button Sign up
+    a(href="register"): button(type="button") Sign up
     br
-  button Take a survey
+  a(href="viewsurveys"): button(type="button") Take a survey
 
