@@ -5,9 +5,15 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const surevySchema = new Schema({
+const questionSchema = new Schema({
+  question: String,
+  answers: [String]
+});
+
+const surveySchema = new Schema({
   title: String,
-  questions: String[10]
+  type: Number,
+  questions: [questionSchema]
 });
 
 
