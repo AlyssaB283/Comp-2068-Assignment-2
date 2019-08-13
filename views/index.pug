@@ -6,18 +6,29 @@ extends layout
 
 block content
 
+  .image 
+   
+
   h1= title
   p Welcome to the #{title}
-  img(src='/public/images/DSA_logo.png' , alt='some image')
 
+  div.dj 
+    p  
+    | In this application will let you create a
+    | KLNIHUOHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    | UYFTDJYTYUGIHUGJYFTH
+    | In this application will let you create a
+    | KLNIHUOHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    | UYFTDJYTYUGIHUGJYFTH
+  br
+  br
   if isAuthenticated
     p Welcome User!
+    br
   else
-    p Please Sign In!
-    p go to "/login" to login or "/register" to sign up!
-    button jhvjkbsvd
-    button(type='primary') Primary
-
-    
-  
+    button Sign in
+    br 
+    button Sign up
+    br
+  button Take a survey
 
